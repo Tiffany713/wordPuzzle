@@ -1,7 +1,15 @@
-.container {
-    padding: 10px;
-}
+#affect-responses {
+    display: none;
+  }
 
-form {
-    margin: top;
-}
+#symptoms-responses {
+    display: none;
+  }
+
+#solution-responses {
+    display: none;
+  }
+
+#links {
+    display: none;
+  }
