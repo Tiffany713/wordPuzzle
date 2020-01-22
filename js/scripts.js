@@ -6,18 +6,20 @@ $(document).ready(function() {
         var breakUp = userSentence.split("");
         console.log(breakUp);
 
+        function replace(array) {
+            // var newString = "";
+            for (var i=0; i < array.length; i++){
+                if (["a", "i", "u", "e", "o"].includes(array[i])) {
+                    array[i] = "-";  
+                }        
+            }
+            return array;
+        }
+
+        var newSent = replace(breakUp).join("");
+        console.log(newSent);
+        // $("#output").text(newSent);
 
         event.preventDefault();
     });  
 });
-
-
-        // var vowels = ["a", "i", "u", "e", "o"]
-
-        
-        // for (var char = 0; char < sentBreak.length; char++) {
-        //     vowels.forEach(function(vowels) {
-        //       if (sentBreak[i] === vowels) {
-        //         sentBreak[i] = "-";
-            
-        //     }
